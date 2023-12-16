@@ -1,4 +1,4 @@
-const portNumber = process.env.PORT;
+const portNumber = 4000;
 
 const express = require("express"); /* Accessing express module */
 
