@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Choose your favorite</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+
+<body>
+	<h1>Choose your favorite Pokemon</h1>
+    
+	<form action="/processfavorite" method="post">
+        <fieldset>
+            <strong>Trainer's name: </strong><input type="text" name="trainer"/><br><br>
+            <strong>Favorite Pokemon: </strong>
+            <input type="text" name="favpokemon" list="pokedex">
+            <datalist id="pokedex">
+                <%- pokedex %>
+            </datalist>
+        </fieldset>
+        <br>
+		<input type="submit" value="Submit"/>
+	</form>
+    <hr>
+    <a href="/">HOME</a>
+</body>
+
+</html>
